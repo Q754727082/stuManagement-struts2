@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="skip" extends="struts-default" namespace="/">
+		<action name="skip_*" class="action.skipAction" method="{1}">
+			<result name="beautyShow">/WEB-INF/jsp/beautyShow.jsp</result>
+			<result name="addCourse">/WEB-INF/jsp/addCourse.jsp</result>
+			<result name="indexGrade">/WEB-INF/jsp/indexGrade.jsp</result>
+			<result name="addGrade">/WEB-INF/jsp/addGrade.jsp</result>
+			<result name="modifyGrade">/WEB-INF/jsp/modifyGrade.jsp</result>
+		</action>
+	</package>
+	
+</struts> 
